@@ -4,8 +4,8 @@ from rest_framework import routers
 from .api.viewsets import CadExperienceSet
 
 router = routers.DefaultRouter()
-router.register(r'cad_exeperience', CadExperienceSet)
+router.register(r'cad_experience', CadExperienceSet, basename="cad_experience")
 
 urlpatterns = [
-    path('', include(router.urls))
+    path('', include(router.urls)),
 ]
